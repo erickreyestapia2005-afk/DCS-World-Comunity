@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Erick\\Desktop\\DCSWorld_Comunity\\DCSWorld_Comunity\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DCSWorld_Comunity.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DCSWorld_Comunity.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Erick\\Desktop\\DCSWorld_Comunity\\DCSWorld_Comunity\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Erick\\Desktop\\DCSWorld_Comunity\\DCSWorld_Comunity\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Erick\\Desktop\\DCSWorld_Comunity\\DCSWorld_Comunity\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Erick\\Desktop\\DCSWorld_Comunity\\DCSWorld_Comunity\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DCSWorld_Comunity.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DCSWorld_Comunity.props",
+      "PackagePath": "build\\DCSWorld_Comunity.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DCSWorld_Comunity.props",
+      "PackagePath": "buildMultiTargeting\\DCSWorld_Comunity.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DCSWorld_Comunity.props",
+      "PackagePath": "buildTransitive\\DCSWorld_Comunity.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
