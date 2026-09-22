@@ -1,0 +1,174 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+@using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+@using DCSWorld_Comunity.Components.Pages
+
+<PageTitle>Iniciar sesión | DCS World Community</PageTitle>
+
+<div class="login-page">
+
+    <div class="login-background"></div>
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <!-- LOGO -->
+            <div class="brand">
+
+                <div class="brand-icon">
+                    D
+                </div>
+
+                <div class="brand-name">
+                    <strong>DCS</strong>
+                    <span>WORLD COMMUNITY</span>
+                </div>
+
+            </div>
+
+
+            <!-- HEADER -->
+            <div class="login-header">
+
+                <h1>Bienvenido de nuevo</h1>
+
+                <p>
+                    Inicia sesión para continuar en la comunidad.
+                </p>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+            <EditForm Model="@loginModel"
+                      OnValidSubmit="@HandleLogin"
+                      FormName="loginForm">
+
+                <DataAnnotationsValidator />
+
+                <!-- USERNAME -->
+                <div class="form-group">
+
+                    <label for="username">
+                        Usuario
+                    </label>
+
+                    <InputText id="username"
+                               class="form-input"
+                               @bind-Value="loginModel.Username"
+                               placeholder="Ingresa tu usuario"
+                               autocomplete="username" />
+
+                    <ValidationMessage For="@(() => loginModel.Username)" />
+
+                </div>
+
+
+                <!-- PASSWORD -->
+                <div class="form-group">
+
+                    <div class="password-label">
+
+                        <label for="password">
+                            Contraseña
+                        </label>
+
+                    </div>
+
+                    <InputText id="password"
+                               type="password"
+                               class="form-input"
+                               @bind-Value="loginModel.Password"
+                               placeholder="Ingresa tu contraseña"
+                               autocomplete="current-password" />
+
+                    <ValidationMessage For="@(() => loginModel.Password)" />
+
+                </div>
+
+
+                <!-- REMEMBER ME -->
+                <div class="remember-me">
+
+                    <input type="checkbox"
+                           id="remember"
+                           @bind="loginModel.RememberMe" />
+
+                    <label for="remember">
+                        Mantener sesión iniciada
+                    </label>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <button type="submit"
+                        class="login-button">
+                    Iniciar sesión
+                </button>
+
+            </EditForm>
+
+
+            <!-- REGISTER -->
+            <div class="register">
+
+                <span>¿Todavía no tienes una cuenta?</span>
+
+                <a href="/register">
+                    Crear cuenta
+                </a>
+
+            </div>
+
+
+            <!-- DIVIDER -->
+            <div class="divider">
+                <span>o continúa con</span>
+            </div>
+
+
+            <!-- EXTERNAL LOGIN -->
+            <div class="external-login">
+
+                <button type="button"
+                        class="external-button">
+
+                    <span>GH</span>
+                    GitHub
+
+                </button>
+
+                <button type="button"
+                        class="external-button">
+
+                    <span>G</span>
+                    Google
+
+                </button>
+
+            </div>
+
+
+            <!-- FOOTER -->
+            <footer class="login-footer">
+                DCS World Community
+            </footer>
+
+        </section>
+
+    </main>
+
+</div>
+
+@code {
+    public LoginModel loginModel = new LoginModel();
+    private void HandleLogin()
+    {
+        NavigationManager.NavigateTo("/home");
+    }
+}

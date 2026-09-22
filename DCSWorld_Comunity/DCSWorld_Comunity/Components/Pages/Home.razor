@@ -1,7 +1,457 @@
-﻿@page "/"
+﻿@page "/home"
 
-<PageTitle>Home</PageTitle>
+<link href="Pages/Home.razor.css" rel="stylesheet" />
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<PageTitle>DCS World Community</PageTitle>
+
+<div class="app-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">D</div>
+            <div>
+                <span>DCS</span>
+                <small>WORLD COMMUNITY</small>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a class="nav-item active" href="/home">
+                <span>⌂</span>
+                Feed
+            </a>
+
+            <a class="nav-item" href="#">
+                <span>◈</span>
+                Misiones
+            </a>
+
+            <a class="nav-item" href="#">
+                <span>+</span>
+                Crear petición
+            </a>
+
+            <a class="nav-item" href="#">
+                <span>★</span>
+                Mis proyectos
+            </a>
+
+            <a class="nav-item" href="#">
+                <span>◉</span>
+                Comunidad
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="points-box">
+                <span class="points-label">MIS PUNTOS</span>
+                <strong>1,240 XP</strong>
+
+                <div class="progress">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <small>760 XP para el siguiente nivel</small>
+            </div>
+
+            <a class="nav-item" href="/">
+                <span>↪</span>
+                Cerrar sesión
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="search">
+                <span>⌕</span>
+                <input placeholder="Buscar misiones, usuarios o aeronaves..." />
+            </div>
+
+            <div class="user-area">
+
+                <button class="notification">
+                    ♢
+                </button>
+
+                <div class="user">
+                    <div class="avatar">RB</div>
+
+                    <div class="user-info">
+                        <strong>Robby</strong>
+                        <small>Contributor</small>
+                    </div>
+
+                    <span class="arrow">⌄</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- FEED -->
+            <section class="feed">
+
+                <div class="feed-header">
+
+                    <div>
+                        <h1>Feed</h1>
+                        <p>Descubre qué está pasando en la comunidad.</p>
+                    </div>
+
+                    <button class="create-button">
+                        + Nueva petición
+                    </button>
+
+                </div>
+
+
+                <!-- FILTERS -->
+                <div class="filters">
+
+                    <button class="filter active">
+                        Para ti
+                    </button>
+
+                    <button class="filter">
+                        Más recientes
+                    </button>
+
+                    <button class="filter">
+                        Más recompensados
+                    </button>
+
+                    <button class="filter">
+                        Misiones
+                    </button>
+
+                </div>
+
+
+                <!-- PETICIÓN 1 -->
+                <article class="mission-card">
+
+                    <div class="card-header">
+
+                        <div class="author">
+
+                            <div class="avatar orange">
+                                AC
+                            </div>
+
+                            <div>
+                                <strong>AirCombatMX</strong>
+                                <span>publicó una petición · hace 2 h</span>
+                            </div>
+
+                        </div>
+
+                        <span class="status open">
+                            ● ABIERTA
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-content">
+
+                        <h2>
+                            Crear una misión cooperativa para F/A-18C
+                        </h2>
+
+                        <p>
+                            Busco ayuda para desarrollar una misión cooperativa
+                            de combate aéreo. La misión debe incluir CAP, escolta
+                            y objetivos dinámicos para un grupo de 4 jugadores.
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag">F/A-18C</span>
+                            <span class="tag">Multiplayer</span>
+                            <span class="tag">Mission Editor</span>
+                            <span class="tag">Co-op</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <div class="reward">
+                            <span>RECOMPENSA</span>
+                            <strong>+500 XP</strong>
+                        </div>
+
+                        <div class="card-stats">
+                            <span>◉ 8 propuestas</span>
+                            <span>♡ 21</span>
+                            <span>💬 12</span>
+                        </div>
+
+                        <button class="view-button">
+                            Ver petición →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PETICIÓN 2 -->
+                <article class="mission-card">
+
+                    <div class="card-header">
+
+                        <div class="author">
+
+                            <div class="avatar blue">
+                                JM
+                            </div>
+
+                            <div>
+                                <strong>JMAviation</strong>
+                                <span>publicó una petición · hace 5 h</span>
+                            </div>
+
+                        </div>
+
+                        <span class="status open">
+                            ● ABIERTA
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-content">
+
+                        <h2>
+                            Livery F-14 Tomcat — VF-84 Jolly Rogers
+                        </h2>
+
+                        <p>
+                            Se busca artista para crear una livery basada en
+                            el esquema histórico de VF-84. Se requiere alta
+                            fidelidad en insignias y numerales.
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag">F-14</span>
+                            <span class="tag">Livery</span>
+                            <span class="tag">Texturing</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <div class="reward">
+                            <span>RECOMPENSA</span>
+                            <strong>+350 XP</strong>
+                        </div>
+
+                        <div class="card-stats">
+                            <span>◉ 4 propuestas</span>
+                            <span>♡ 14</span>
+                            <span>💬 7</span>
+                        </div>
+
+                        <button class="view-button">
+                            Ver petición →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PETICIÓN 3 -->
+                <article class="mission-card">
+
+                    <div class="card-header">
+
+                        <div class="author">
+
+                            <div class="avatar purple">
+                                MX
+                            </div>
+
+                            <div>
+                                <strong>MaverickMX</strong>
+                                <span>publicó una petición · ayer</span>
+                            </div>
+
+                        </div>
+
+                        <span class="status progress-status">
+                            ● EN PROGRESO
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-content">
+
+                        <h2>
+                            Campaña completa para Apache AH-64D
+                        </h2>
+
+                        <p>
+                            Desarrollo colaborativo de una campaña de 6
+                            misiones utilizando el AH-64D. Actualmente hay
+                            3 colaboradores trabajando en el proyecto.
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag">AH-64D</span>
+                            <span class="tag">Campaign</span>
+                            <span class="tag">Co-op</span>
+                        </div>
+
+
+                        <div class="mission-progress">
+
+                            <div class="progress-info">
+                                <span>Progreso</span>
+                                <strong>65%</strong>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-fill progress-65"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-footer">
+
+                        <div class="reward">
+                            <span>RECOMPENSA</span>
+                            <strong>+800 XP</strong>
+                        </div>
+
+                        <div class="card-stats">
+                            <span>◉ 3 colaboradores</span>
+                            <span>♡ 31</span>
+                            <span>💬 18</span>
+                        </div>
+
+                        <button class="view-button">
+                            Ver proyecto →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- RIGHT PANEL -->
+            <aside class="right-panel">
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        <h3>Comunidad</h3>
+                        <a href="#">Ver todo</a>
+                    </div>
+
+
+                    <div class="community-user">
+
+                        <div class="avatar orange">
+                            AC
+                        </div>
+
+                        <div>
+                            <strong>AirCombatMX</strong>
+                            <span>1,840 XP</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="community-user">
+
+                        <div class="avatar blue">
+                            JM
+                        </div>
+
+                        <div>
+                            <strong>JMAviation</strong>
+                            <span>1,620 XP</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="community-user">
+
+                        <div class="avatar purple">
+                            MX
+                        </div>
+
+                        <div>
+                            <strong>MaverickMX</strong>
+                            <span>1,420 XP</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        <h3>Temas populares</h3>
+                    </div>
+
+                    <div class="topic">
+                        <span># F/A-18C</span>
+                        <small>128 publicaciones</small>
+                    </div>
+
+                    <div class="topic">
+                        <span># Mission Editor</span>
+                        <small>94 publicaciones</small>
+                    </div>
+
+                    <div class="topic">
+                        <span># Liveries</span>
+                        <small>76 publicaciones</small>
+                    </div>
+
+                    <div class="topic">
+                        <span># Multiplayer</span>
+                        <small>63 publicaciones</small>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+

@@ -1,0 +1,405 @@
+﻿```css
+/* =========================================
+   DCS WORLD COMMUNITY
+   LOGIN
+   ========================================= */
+* {
+    box-sizing: border-box;
+}
+
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient( circle at 50% 35%, rgba(214, 168, 79, 0.08), transparent 35% ), #090c10;
+    color: #e7eaf0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   BACKGROUND
+   ========================================= */
+
+.login-background {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient( rgba(9, 12, 16, 0.94), rgba(9, 12, 16, 0.98) ), linear-gradient( 135deg, transparent 45%, rgba(255, 255, 255, 0.02) 45%, rgba(255, 255, 255, 0.02) 46%, transparent 46% );
+    background-size: cover, 80px 80px;
+    pointer-events: none;
+}
+
+
+/* =========================================
+   LOGIN CONTAINER
+   ========================================= */
+
+.login-container {
+    width: 100%;
+    max-width: 440px;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   LOGIN CARD
+   ========================================= */
+
+.login-card {
+    background: rgba(16, 20, 26, 0.96);
+    border: 1px solid #252c36;
+    border-radius: 14px;
+    padding: 38px 40px 30px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.01);
+}
+
+
+/* =========================================
+   BRAND
+   ========================================= */
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 38px;
+}
+
+.brand-icon {
+    width: 46px;
+    height: 46px;
+    background: #d6a84f;
+    color: #10141a;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+    .brand-name strong {
+        font-size: 19px;
+        line-height: 19px;
+        letter-spacing: 0.5px;
+    }
+
+    .brand-name span {
+        margin-top: 4px;
+        color: #697382;
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .login-header h1 {
+        margin: 0;
+        color: #f1f3f5;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .login-header p {
+        margin: 9px 0 0;
+        color: #747e8c;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label,
+    .password-label label {
+        display: block;
+        margin-bottom: 8px;
+        color: #aab2bd;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .password-label label {
+        margin-bottom: 8px;
+    }
+
+    .password-label a {
+        color: #d6a84f;
+        font-size: 10px;
+        text-decoration: none;
+        margin-bottom: 8px;
+    }
+
+        .password-label a:hover {
+            text-decoration: underline;
+        }
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+.form-input {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    background: #0c1015;
+    border: 1px solid #29313b;
+    border-radius: 7px;
+    outline: none;
+    color: #edf0f4;
+    font-size: 13px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+    .form-input::placeholder {
+        color: #4f5865;
+    }
+
+    .form-input:hover {
+        border-color: #38424e;
+    }
+
+    .form-input:focus {
+        background: #0e1319;
+        border-color: #d6a84f;
+        box-shadow: 0 0 0 3px rgba(214, 168, 79, 0.08);
+    }
+
+
+/* =========================================
+   VALIDATION
+   ========================================= */
+
+.validation-message {
+    display: block;
+    margin-top: 6px;
+    color: #d87979;
+    font-size: 10px;
+}
+
+
+/* =========================================
+   REMEMBER ME
+   ========================================= */
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0 22px;
+}
+
+    .remember-me input {
+        width: 14px;
+        height: 14px;
+        accent-color: #d6a84f;
+        cursor: pointer;
+    }
+
+    .remember-me label {
+        color: #737d8a;
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+
+/* =========================================
+   LOGIN BUTTON
+   ========================================= */
+
+.login-button {
+    width: 100%;
+    height: 46px;
+    border: none;
+    border-radius: 7px;
+    background: #d6a84f;
+    color: #11151a;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+    .login-button:hover {
+        background: #e1b45c;
+        box-shadow: 0 7px 20px rgba(214, 168, 79, 0.15);
+    }
+
+    .login-button:active {
+        transform: translateY(1px);
+    }
+
+
+/* =========================================
+   REGISTER
+   ========================================= */
+
+.register {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 22px;
+    font-size: 11px;
+}
+
+    .register span {
+        color: #697382;
+    }
+
+    .register a {
+        color: #d6a84f;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+        .register a:hover {
+            text-decoration: underline;
+        }
+
+
+/* =========================================
+   DIVIDER
+   ========================================= */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 27px 0 18px;
+    color: #4f5865;
+    font-size: 10px;
+}
+
+    .divider::before,
+    .divider::after {
+        content: "";
+        height: 1px;
+        flex: 1;
+        background: #252c36;
+    }
+
+    .divider span {
+        white-space: nowrap;
+    }
+
+
+/* =========================================
+   EXTERNAL LOGIN
+   ========================================= */
+
+.external-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.external-button {
+    height: 40px;
+    background: #151a21;
+    border: 1px solid #29313b;
+    border-radius: 7px;
+    color: #aab2bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+    .external-button span {
+        font-weight: bold;
+        color: #dce0e5;
+    }
+
+    .external-button:hover {
+        background: #1b2129;
+        border-color: #3a434f;
+        color: #fff;
+    }
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.login-footer {
+    text-align: center;
+    margin-top: 28px;
+    color: #3f4752;
+    font-size: 9px;
+    letter-spacing: 0.8px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 500px) {
+
+    .login-container {
+        padding: 20px 15px;
+    }
+
+    .login-card {
+        padding: 30px 25px 25px;
+    }
+
+    .login-header h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .external-login {
+        grid-template-columns: 1fr;
+    }
+
+    .register {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+```
