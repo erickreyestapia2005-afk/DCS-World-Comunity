@@ -1,5 +1,4 @@
-﻿```css
-* {
+﻿* {
     box-sizing: border-box;
 }
 
@@ -310,131 +309,6 @@
 
 /* CARDS */
 
-.mission-card {
-    background: #11161d;
-    border: 1px solid #222934;
-    border-radius: 10px;
-    margin-bottom: 18px;
-    overflow: hidden;
-    transition: .2s;
-}
-
-    .mission-card:hover {
-        border-color: #3a424e;
-        transform: translateY(-1px);
-    }
-
-.card-header {
-    padding: 17px 20px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #202630;
-}
-
-.author {
-    display: flex;
-    gap: 11px;
-    align-items: center;
-}
-
-    .author strong,
-    .author span {
-        display: block;
-    }
-
-    .author strong {
-        font-size: 13px;
-    }
-
-    .author span {
-        color: #697382;
-        font-size: 10px;
-        margin-top: 3px;
-    }
-
-.status {
-    font-size: 9px;
-    font-weight: bold;
-    letter-spacing: .5px;
-}
-
-    .status.open {
-        color: #76b78a;
-    }
-
-.progress-status {
-    color: #d6a84f;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-    .card-content h2 {
-        margin: 0 0 10px;
-        font-size: 18px;
-    }
-
-    .card-content p {
-        color: #8b94a1;
-        line-height: 1.6;
-        font-size: 13px;
-        margin-bottom: 16px;
-    }
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-}
-
-.tag {
-    background: #1b2129;
-    color: #8e98a6;
-    border-radius: 5px;
-    padding: 5px 8px;
-    font-size: 10px;
-}
-
-.card-footer {
-    background: #0e1319;
-    border-top: 1px solid #202630;
-    padding: 13px 20px;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-.reward {
-    min-width: 100px;
-}
-
-    .reward span {
-        display: block;
-        color: #68717e;
-        font-size: 8px;
-        letter-spacing: 1px;
-    }
-
-    .reward strong {
-        color: #d6a84f;
-        font-size: 14px;
-    }
-
-.card-stats {
-    display: flex;
-    gap: 15px;
-    color: #68717e;
-    font-size: 10px;
-    flex: 1;
-}
-
-.view-button {
-    padding: 8px 12px;
-    font-size: 11px;
-}
-
-
 /* PROGRESO */
 
 .mission-progress {
@@ -588,4 +462,3 @@
     }
 }
 
-```

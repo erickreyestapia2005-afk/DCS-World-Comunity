@@ -1,5 +1,8 @@
 ﻿@page "/home"
 
+@rendermode InteractiveServer
+@using DCSWorld_Comunity.Components.Pages.assets
+
 <link href="Pages/Home.razor.css" rel="stylesheet" />
 
 
@@ -144,222 +147,23 @@
 
 
                 <!-- PETICIÓN 1 -->
-                <article class="mission-card">
-
-                    <div class="card-header">
-
-                        <div class="author">
-
-                            <div class="avatar orange">
-                                AC
-                            </div>
-
-                            <div>
-                                <strong>AirCombatMX</strong>
-                                <span>publicó una petición · hace 2 h</span>
-                            </div>
-
-                        </div>
-
-                        <span class="status open">
-                            ● ABIERTA
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-content">
-
-                        <h2>
-                            Crear una misión cooperativa para F/A-18C
-                        </h2>
-
-                        <p>
-                            Busco ayuda para desarrollar una misión cooperativa
-                            de combate aéreo. La misión debe incluir CAP, escolta
-                            y objetivos dinámicos para un grupo de 4 jugadores.
-                        </p>
-
-                        <div class="tags">
-                            <span class="tag">F/A-18C</span>
-                            <span class="tag">Multiplayer</span>
-                            <span class="tag">Mission Editor</span>
-                            <span class="tag">Co-op</span>
-                        </div>
-
-                    </div>
-
-
-                    <div class="card-footer">
-
-                        <div class="reward">
-                            <span>RECOMPENSA</span>
-                            <strong>+500 XP</strong>
-                        </div>
-
-                        <div class="card-stats">
-                            <span>◉ 8 propuestas</span>
-                            <span>♡ 21</span>
-                            <span>💬 12</span>
-                        </div>
-
-                        <button class="view-button">
-                            Ver petición →
-                        </button>
-
-                    </div>
-
-                </article>
+                <Article
+                    Author="JMAviation"
+                    AuthorInitials="JM"
+                    TimeAgo="hace 5 h"
+                    Status="ABIERTA"
+                    Title="Livery F-14 Tomcat — VF-84 Jolly Rogers"
+                    Description="Se busca artista para crear una livery basada en el esquema histórico de VF-84. Se requiere alta fidelidad en insignias y numerales."
+                    Tags="@(new List<string> { "F-14", "Livery", "Texturing" })"
+                    Reward="350"
+                    Proposals="4"
+                    Likes="14"
+                    Comments="7"
+                 />
 
 
                 <!-- PETICIÓN 2 -->
-                <article class="mission-card">
-
-                    <div class="card-header">
-
-                        <div class="author">
-
-                            <div class="avatar blue">
-                                JM
-                            </div>
-
-                            <div>
-                                <strong>JMAviation</strong>
-                                <span>publicó una petición · hace 5 h</span>
-                            </div>
-
-                        </div>
-
-                        <span class="status open">
-                            ● ABIERTA
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-content">
-
-                        <h2>
-                            Livery F-14 Tomcat — VF-84 Jolly Rogers
-                        </h2>
-
-                        <p>
-                            Se busca artista para crear una livery basada en
-                            el esquema histórico de VF-84. Se requiere alta
-                            fidelidad en insignias y numerales.
-                        </p>
-
-                        <div class="tags">
-                            <span class="tag">F-14</span>
-                            <span class="tag">Livery</span>
-                            <span class="tag">Texturing</span>
-                        </div>
-
-                    </div>
-
-
-                    <div class="card-footer">
-
-                        <div class="reward">
-                            <span>RECOMPENSA</span>
-                            <strong>+350 XP</strong>
-                        </div>
-
-                        <div class="card-stats">
-                            <span>◉ 4 propuestas</span>
-                            <span>♡ 14</span>
-                            <span>💬 7</span>
-                        </div>
-
-                        <button class="view-button">
-                            Ver petición →
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PETICIÓN 3 -->
-                <article class="mission-card">
-
-                    <div class="card-header">
-
-                        <div class="author">
-
-                            <div class="avatar purple">
-                                MX
-                            </div>
-
-                            <div>
-                                <strong>MaverickMX</strong>
-                                <span>publicó una petición · ayer</span>
-                            </div>
-
-                        </div>
-
-                        <span class="status progress-status">
-                            ● EN PROGRESO
-                        </span>
-
-                    </div>
-
-
-                    <div class="card-content">
-
-                        <h2>
-                            Campaña completa para Apache AH-64D
-                        </h2>
-
-                        <p>
-                            Desarrollo colaborativo de una campaña de 6
-                            misiones utilizando el AH-64D. Actualmente hay
-                            3 colaboradores trabajando en el proyecto.
-                        </p>
-
-                        <div class="tags">
-                            <span class="tag">AH-64D</span>
-                            <span class="tag">Campaign</span>
-                            <span class="tag">Co-op</span>
-                        </div>
-
-
-                        <div class="mission-progress">
-
-                            <div class="progress-info">
-                                <span>Progreso</span>
-                                <strong>65%</strong>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-fill progress-65"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="card-footer">
-
-                        <div class="reward">
-                            <span>RECOMPENSA</span>
-                            <strong>+800 XP</strong>
-                        </div>
-
-                        <div class="card-stats">
-                            <span>◉ 3 colaboradores</span>
-                            <span>♡ 31</span>
-                            <span>💬 18</span>
-                        </div>
-
-                        <button class="view-button">
-                            Ver proyecto →
-                        </button>
-
-                    </div>
-
-                </article>
+               
 
             </section>
 
